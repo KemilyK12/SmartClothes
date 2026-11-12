@@ -1,4 +1,4 @@
-import * as ItemCompraModel from "../Models/itemCompraModel.js";
+import * as ItemCompraModel from "../Models/itenscompraModel.js";
 
 export function listar(req, res) {
     ItemCompraModel.listar((err, resultados) => {
