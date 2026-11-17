@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | SmartClothes</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <a href="/" class="logo">SMART<span>CLOTHES</span></a>
+
+        <nav class="menu">
+            <a href="/">Início</a>
+            <a href="/#masculino">Masculino</a>
+            <a href="/#colecao">Coleção</a>
+        </nav>
+
+        <div class="acoes">
+            <a href="/pages/login.html">Entrar</a>
+            <a href="/pages/carrinho.html">Sacola</a>
+        </div>
+    </header>
+
+    <main class="pagina-login">
+        <section class="login-container">
+
+            <div class="login-apresentacao">
+                <span>SMARTCLOTHES</span>
+                <h1>Bem-vindo de volta.</h1>
+                <p>
+                    Seu estilo começa aqui.
+                    Acesse sua conta e descubra uma experiência
+                    de elegância e sofisticação.
+                </p>
+                <a href="/" class="login-voltar">
+                    Explorar coleção
+                </a>
+            </div>
+
+            <div class="login-formulario">
+                <span class="login-etiqueta">ÁREA DO CLIENTE</span>
+
+                <h2>Entre na sua conta</h2>
+                <p>Acesse sua conta SmartClothes.</p>
+
+                <form id="form-login">
+
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Seu e-mail"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <label for="senha">Senha</label>
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Sua senha"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                    <button type="submit" class="login-botao">
+                        Entrar
+                    </button>
+
+                    <p id="mensagem-login" aria-live="polite"></p>
+
+                </form>
+
+                <div class="login-cadastro">
+                    Ainda não tem uma conta?
+                    <a href="/pages/cadastro.html">Cadastre-se</a>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <h2>SMARTCLOTHES</h2>
+        <p>O verdadeiro estilo nunca sai de moda.</p>
+        <span>© 2026 SmartClothes</span>
+    </footer>
+
+    <script src="/js/config.js"></script>
+    <script src="/js/login.js"></script>
+
+</body>
+</html>

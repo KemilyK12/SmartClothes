@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se | SmartClothes</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <a href="/" class="logo">SMART<span>CLOTHES</span></a>
+
+        <nav class="menu">
+            <a href="/">Início</a>
+            <a href="/#masculino">Masculino</a>
+            <a href="/#colecao">Coleção</a>
+        </nav>
+
+        <div class="acoes">
+            <a href="/pages/login.html">Entrar</a>
+            <a href="/pages/carrinho.html">Sacola</a>
+        </div>
+    </header>
+
+    <main class="pagina-cadastro">
+
+        <section class="cadastro-container">
+
+            <div class="cadastro-apresentacao">
+                <span>SMARTCLOTHES</span>
+
+                <h1>Seu estilo começa aqui.</h1>
+
+                <p>
+                    Faça parte da SmartClothes.
+                    Crie sua conta e descubra uma coleção
+                    que une elegância, conforto e tecnologia.
+                </p>
+
+                <a href="/pages/login.html" class="cadastro-voltar">
+                    Já tenho uma conta
+                </a>
+            </div>
+
+            <div class="cadastro-formulario">
+
+                <span class="cadastro-etiqueta">NOVO CLIENTE</span>
+
+                <h2>Crie sua conta</h2>
+
+                <p>Preencha seus dados para começar.</p>
+
+                <form id="form-cadastro">
+
+                    <label for="nome">Nome completo</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Seu nome completo"
+                        autocomplete="name"
+                        required
+                    >
+
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Seu melhor e-mail"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <label for="telefone">Telefone</label>
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        placeholder="(11) 99999-9999"
+                        autocomplete="tel"
+                    >
+
+                    <div class="cadastro-linha">
+
+                        <div>
+                            <label for="altura">Altura (cm)</label>
+                            <input
+                                type="number"
+                                id="altura"
+                                name="altura"
+                                placeholder="Ex.: 170"
+                                min="1"
+                                required
+                            >
+                        </div>
+
+                        <div>
+                            <label for="peso">Peso (kg)</label>
+                            <input
+                                type="number"
+                                id="peso"
+                                name="peso"
+                                placeholder="Ex.: 70"
+                                min="1"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                    <label for="senha">Senha</label>
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Crie uma senha"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                    >
+
+                    <label for="confirmar-senha">Confirmar senha</label>
+                    <input
+                        type="password"
+                        id="confirmar-senha"
+                        name="confirmar-senha"
+                        placeholder="Digite a senha novamente"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                    >
+
+                    <button type="submit" class="cadastro-botao">
+                        Criar minha conta
+                    </button>
+
+                    <p id="mensagem-cadastro" aria-live="polite"></p>
+
+                </form>
+
+                <div class="cadastro-login">
+                    Já possui uma conta?
+                    <a href="/pages/login.html">Entrar</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <h2>SMARTCLOTHES</h2>
+        <p>O verdadeiro estilo nunca sai de moda.</p>
+        <span>© 2026 SmartClothes</span>
+    </footer>
+
+    <script src="/js/config.js"></script>
+    <script src="/js/cadastro.js"></script>
+
+</body>
+</html>

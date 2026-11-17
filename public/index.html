@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartClothes | Estilo Atemporal</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <a href="/" class="logo">SMART<span>CLOTHES</span></a>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#masculino">Masculino</a>
+            <a href="#colecao">Coleção</a>
+        </nav>
+
+        <div class="acoes">
+    <a href="/pages/login.html" id="link-perfil">Entrar</a>
+    <a href="/pages/carrinho.html">Sacola</a>
+    </div>
+
+    </header>
+
+
+    <!-- CARROSSEL -->
+    <main>
+
+        <section class="carrossel" id="inicio">
+
+            <div class="slide ativo">
+                <div class="slide-texto">
+                    <span>SMARTCLOTHES COLLECTION</span>
+                    <h1>O clássico nunca sai de moda.</h1>
+                    <p>Peças atemporais para quem valoriza cada detalhe.</p>
+                    <a href="#colecao" class="botao">Descobrir coleção</a>
+                </div>
+
+                <img src="./images/blazer.jpg" alt="Blazer clássico">
+            </div>
+
+            <div class="slide">
+                <div class="slide-texto">
+                    <span>ESSÊNCIA E ELEGÂNCIA</span>
+                    <h1>Vista sua melhor versão.</h1>
+                    <p>Elegância que vai além das tendências.</p>
+                    <a href="#colecao" class="botao">Ver coleção</a>
+                </div>
+
+                <img src="./images/camisa_social.jpg" alt="Camisa social">
+            </div>
+
+            <div class="slide">
+                <div class="slide-texto">
+                    <span>ESTILO ATEMPORAL</span>
+                    <h1>Detalhes fazem a diferença.</h1>
+                    <p>Encontre peças que combinam com você.</p>
+                    <a href="#colecao" class="botao">Comprar agora</a>
+                </div>
+
+                <img src="./images/polo.jpg" alt="Polo clássica">
+            </div>
+
+            <button class="seta anterior" id="anterior" aria-label="Slide anterior">
+                &#10094;
+            </button>
+
+            <button class="seta proximo" id="proximo" aria-label="Próximo slide">
+                &#10095;
+            </button>
+
+            <div class="indicadores">
+                <button class="indicador ativo" data-slide="0" aria-label="Slide 1"></button>
+                <button class="indicador" data-slide="1" aria-label="Slide 2"></button>
+                <button class="indicador" data-slide="2" aria-label="Slide 3"></button>
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section class="categorias" id="masculino">
+
+            <div class="titulo-secao">
+                <span>EXPLORE</span>
+                <h2>Encontre seu estilo</h2>
+            </div>
+
+            <div class="categorias-lista">
+                <a href="#colecao">Camisas</a>
+                <a href="#colecao">Polos</a>
+                <a href="#colecao">Blazers</a>
+                <a href="#colecao">Calças</a>
+                <a href="#colecao">Calçados</a>
+            </div>
+
+        </section>
+
+
+        <!-- PRODUTOS -->
+        <section class="produtos" id="colecao">
+
+            <div class="titulo-secao">
+                <span>NOSSA SELEÇÃO</span>
+                <h2>Peças em destaque</h2>
+                <p>Descubra nossa coleção.</p>
+            </div>
+
+            <div id="lista-produtos" class="lista-produtos">
+                <p>Carregando produtos...</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <h2>SMARTCLOTHES</h2>
+        <p>O verdadeiro estilo nunca sai de moda.</p>
+        <span>© 2026 SmartClothes</span>
+    </footer>
+
+
+   <script src="./js/config.js"></script>
+    <script src="./js/inicio.js"></script>
+
+</body>
+</html>

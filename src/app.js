@@ -1,4 +1,7 @@
+
 import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
 
 import clienteRoutes from "./Route/clienteRoutes.js";
 import produtoRoutes from "./Route/produtoRoutes.js";
@@ -10,10 +13,15 @@ import notaFiscalRoutes from "./Route/notaFiscalRoutes.js";
 
 const app = express();
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, "../public")));
+
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.json({ mensagem: "API SmartClothes rodando!" });
+    res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
 app.use("/clientes", clienteRoutes);
